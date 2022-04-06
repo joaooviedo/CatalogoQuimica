@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/style.css" type="text/css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <%- include('./partials/header.ejs') %>
+    <main>
+      <% moleculaquimica.forEach((moleculaquimica)=> { %>
+        <a href="/detalhes/<%= moleculaquimica.id %>  ">
+          <section id="cards">
+            <div class="card">
+              <img class="img" src="<%= moleculaquimica.imagemnormal %> " alt="molecula" />
+              <p class="text">
+              <h2>Nome IUPAC: <%= moleculaquimica.nomeiupac %>
+              </h2>
+              <h3>Nome Usual: <%= moleculaquimica.nomeusual %>
+              </h3>
+              </p>
+            </a>
+            </div>
+            <div class="icons">
+              <a href="/deletar/<%=moleculaquimica.id%>">
+                <img src="/img/lixo.png" alt="lixo">
+              </a>
+              <a href="/editar/<%=moleculaquimica.id%>">
+                <img src="/img/lapis.png" alt="lapis">
+              </a>
+            </div>
+          </section>
+        <% }) %>
+    </main>
+</body>
+</html>

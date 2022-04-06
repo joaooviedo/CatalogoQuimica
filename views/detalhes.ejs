@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/detalhes.css" type="text/css" />
+  <title>Detalhes</title>
+</head>
+
+<body>
+  <%- include('./partials/header.ejs') %>
+    <main>
+      <section>
+        <div class="img">
+          <img src="<%= moleculadet.imagemnormal %> " alt="molecula">
+        </div>
+        <div class="table">
+          <table>
+            <thead>
+              <tr> Propriedades </tr>
+            </thead>
+            <tr>
+            <tr>
+              <td>Nome IUPAC</td>
+              <td> <%= moleculadet.nomeiupac %>  </td>
+            </tr>
+            <tr>
+              <td>Nome USUAL</td>
+              <td> <%= moleculadet.nomeusual %>  </td>
+            </tr>
+            <tr>
+              <td>Formula Química</td>
+              <td> <%= moleculadet.formula %>  </td>
+            </tr>
+            <tr>
+              <td>Grupo Funcional</td>
+              <td> <%= moleculadet.grupofuncional %>  </td>
+            </tr>
+            <tr>
+              <td>Densidade</td>
+              <td> <%= moleculadet.densidade %>  </td>
+            </tr>
+            <tr>
+              <td>Ponto de Ebulição</td>
+              <td> <%= moleculadet.pontodeebuliçao %>  </td>
+            </tr>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+</body>
+
+</html>

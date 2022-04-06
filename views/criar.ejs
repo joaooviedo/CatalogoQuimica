@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/criar.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+        <main>
+            <section>
+                <div id="form">
+                    <form action="/criar" method="post">
+                        <legend> Adicionar Molécula </legend>
+                        <fieldset>
+                            <label for="nomeiupac"> Nome IUPAC </label>
+                            <input type="text" name="nomeiupac">
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="nomeusual"> Nome Usual </label>
+                            <input type="text" name="nomeusual">
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="imagemnormal"> Imagem </label>
+                            <input type="text" name="imagemnormal">
+                        </fieldset>
+                        <fieldset>
+                            <label for="formula"> Formula Química </label>
+                            <input type="text" name="formula">
+                        </fieldset>
+                        <fieldset>
+                            <label for="grupofuncional"> Grupo Funcional </label>
+                            <input type="text" name="grupofuncional">
+                        </fieldset>
+                        <fieldset>
+                            <label for="densidade"> Densidade </label>
+                            <input type="text" name="densidade">
+                        </fieldset>
+                        <fieldset>
+                            <label for="pontodeebuliçao"> Ponto de Ebulição</label>
+                            <input type="text" name="pontodeebuliçao">
+                        </fieldset>
+                        <div id="btn">
+                            <button type="submit"> Adicionar </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+</body>
+
+</html>

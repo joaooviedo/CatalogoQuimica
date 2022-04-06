@@ -1,0 +1,29 @@
+{
+  "name": "catalogoquimica",
+  "version": "1.0.0",
+  "description": "Projeto Catálogo de Química",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaooviedo/CatalogoQuimica.git"
+  },
+  "author": "João Oviedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaooviedo/CatalogoQuimica/issues"
+  },
+  "homepage": "https://github.com/joaooviedo/CatalogoQuimica#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3",
+    "sequelize": "^6.17.0"
+  }
+}
