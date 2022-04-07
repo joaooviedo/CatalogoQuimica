@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: Roboto, arial;
+  zoom: 105%;
 }
 body {
   background-color: aquamarine;
@@ -30,6 +31,25 @@ section {
   margin-top: 40px;
   justify-content:space-around;
   align-items: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li{
+  display: flex;
+  background-color:antiquewhite;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 110%;
+  height: 110%;
+  align-items: center;
+  justify-content: center;
+}
+li:hover {
+  transform: scale(1.1);
+  background-color: rgb(255, 212, 155);
 }
 img {
  width: 75%;

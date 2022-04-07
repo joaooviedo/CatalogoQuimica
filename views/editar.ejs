@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/criar.css">
-    <title>Criar</title>
+    <title>Editar</title>
 </head>
 
 <body>
@@ -14,40 +14,45 @@
         <main>
             <section>
                 <div id="form">
-                    <form action="/criar" method="post">
-                        <legend> Adicionar Molécula </legend>
+                    <form action="/editar/<%= molecula.id %> " method="post">
+                        <legend> Editar <%= molecula.nomeiupac %>  </legend>
                         <fieldset>
                             <label for="nomeiupac"> Nome IUPAC </label>
-                            <input type="text" name="nomeiupac">
+                            <input type="text" name="nomeiupac" value="<%= molecula.nomeiupac %> ">
                         </fieldset>
 
                         <fieldset>
                             <label for="nomeusual"> Nome Usual </label>
-                            <input type="text" name="nomeusual">
+                            <input type="text" name="nomeusual" value="<%= molecula.nomeusual %> ">
                         </fieldset>
 
                         <fieldset>
                             <label for="imagemnormal"> Imagem </label>
-                            <input type="text" name="imagemnormal">
+                            <input type="text" name="imagemnormal" value="<%= molecula.imagemnormal %> ">
                         </fieldset>
+
                         <fieldset>
                             <label for="formula"> Formula Química </label>
-                            <input type="text" name="formula">
+                            <input type="text" name="formula" value="<%= molecula.formula %> ">
                         </fieldset>
+
                         <fieldset>
                             <label for="grupofuncional"> Grupo Funcional </label>
-                            <input type="text" name="grupofuncional">
+                            <input type="text" name="grupofuncional" value="<%= molecula.grupofuncional %> ">
                         </fieldset>
+
                         <fieldset>
                             <label for="densidade"> Densidade </label>
-                            <input type="text" name="densidade">
+                            <input type="text" name="densidade" value="<%= molecula.densidade %> ">
                         </fieldset>
+
                         <fieldset>
                             <label for="pontodeebuliçao"> Ponto de Ebulição</label>
-                            <input type="text" name="pontodeebuliçao">
+                            <input type="text" name="pontodeebuliçao" value="<%= molecula.pontodeebuliçao %> ">
                         </fieldset>
+
                         <div id="btn">
-                            <button type="submit"> Adicionar </button>
+                            <button type="submit"> Editar </button>
                         </div>
                     </form>
                 </div>
